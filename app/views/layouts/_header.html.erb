@@ -1,0 +1,27 @@
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar=header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="#bs-example-navbar-collapse-1">
+        <spam class="sr-only">Toggle Navigation</spam>
+        <spam class="icon-bar"></spam>
+        <spam class="icon-bar"></spam>
+        <spam class="icon-bar"></spam>
+      </button>
+      <% if user_signed_in? %>
+        <%= link_to "Task List", root_path, class: "navbar-brand" %>
+      <% end %>
+    </div>
+    <div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <% if user_signed_in? %>
+          <li><%= link_to "New Task", new_task_path, class:"active" %></li>
+          <li><%= link_to "Edit Account", edit_user_registration_path, class:"active" %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, :method => :delete, class:"active" %></li>
+        <% else %> 
+          <li><%= link_to "Sign In", new_user_registration_path, class:"acite" %></li>
+          <li><%= link_to "Sign Up", new_user_session_path, class:"acite" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
