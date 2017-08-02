@@ -1,24 +1,19 @@
-# README
+# Task List
+This is an app to simulate a todo-list system.
+You can create your next tasks and then delete when it's done.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Ruby version
+ruby 2.4.0
 
-* Ruby version
+## Rails version
+Rails 5.1.2
 
-* System dependencies
+## System dependencies
+Any *nix plataform
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup 
+Run in your console: 
+```
+bin/setup
+``` 
